@@ -1,14 +1,8 @@
-var App = angular.module('myWebsite', ['ngMaterial, ng-Aria,']);
+var App = angular.module('myWebsite', ['ngMaterial']);
 
-// app.controller('appCtrl', function($scope){
-// 	$scope.contact = {
-// 	    showTooltip : true,
-// 	    tipDirection : ''
-// 	  };
-// 	 $scope.contact.showTooltip = function(val){
 
-// 	 } 
-};
-
+App.controller('contact', function($scope){
+	
+});
 
 

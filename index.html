@@ -5,30 +5,64 @@
 		<title>Robert St. Lezin Portfolio Website</title>
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="styles/styles.css">
 	</head>
 		<body>
-			<div class="container">
-				<div class="row">
-					<div flex>
-						<md-button class="md-fab" aria-label="Message Me">
-		          <md-icon md-svg-src="img/icons/ic_insert_drive_file_24px.svg"></md-icon>
-		          <md-tooltip md-visible="contact.showTooltip" md-direction="bottom">
-		            Insert Drive
-	          	</md-tooltip>
-	        	</md-button>
-					</div>
-					<div flex>
-						<md-button class="md-fab" aria-label="Call Me">
-		          <md-icon md-svg-src="img/icons/ic_insert_drive_file_24px.svg"></md-icon>
-		          <md-tooltip md-visible="demo.showTooltip" md-direction="{{demo.tipDirection}}">
-		            Insert Drive
-		          </md-tooltip>
-	        </md-button>
-					</div>
+			<div class="background-pic" layout="row" layout-align="center center" style=" width: 80%; height: 400px; margin: 0px auto; text-align: center; " >
+				<div flex >
+					<md-button class="md-fab md-accent" aria-label="Call Me">
+					<md-tooltip md-direction="bottom">
+						Call Me
+					</md-tooltip>
+					<md-icon md-svg-src="./img/envelope.svg" style="width: 24px; height: 24px;"></md-icon>
+					</md-button>
+				</div>
+				<div flex style="width:20%; height:100%;">
+					<div class="circle"></div>
+				</div>
+				<div flex>
+					<md-button class="md-fab md-accent" aria-label="Message Me">
+					<md-tooltip md-direction="bottom">
+						Call Me
+					</md-tooltip>
+					<md-icon md-svg-src="./img/phone-receiver.svg" style="width: 24px; height: 24px;"></md-icon>
+					</md-button>
 				</div>
 			</div>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-aria.js"></script> 
+				<section id="about">
+					<div>
+						<h2>Hello, I'm Rob St. Lezin</h2>
+						<p>
+						Jr. Web Developer Extradinaire, MEAN stack enthusiast and practictioner. I have two australian side-kicks Shug and Louie who love adventure. <br>
+						Hire us for your next Jr. Development Job.
+						</p>
+					</div>
+				</section>
+				<div class="header">
+					<div>
+						<h3>What I Can Do</h3>
+					</div>
+				</div>
+				<div id="my-skills-content" layout="row" layout-align="center center">
+					<div flex>
+						html/css
+					</div>
+					<div flex>
+						Javascript Frameworks
+					</div>
+					<div flex>
+						Analytics/SEO
+					</div>
+				</div>
+			<!-- 	<div flex>
+				<a href="http://www.freepik.com/free-vector/useful-web-icons-collection_573292.htm">Designed by Freepik</a>
+				</div> -->
+<!--dependencies for Angular Material-->
+	<script src="/node_modules/angular/angular.js"></script>
+	<script src="/node_modules/angular-aria/angular-aria.js"></script> 
+	<script src="/node_modules/angular-animate/angular-animate.js"></script> 
+	<script src="/node_modules/angular-material/angular-material.js"></script> 
+	<script src="app.js"></script>
+
 		</body>
 </html>
