@@ -7,9 +7,9 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="styles/styles.css">
 	</head>
-		<body>
-			<div class="background-pic" layout="row" layout-align="center center" style=" width: 80%; height: 400px; margin: 0px auto; text-align: center; " >
-				<div flex >
+		<body ng-controller="control">
+			<div class="background-pic" layout="row" layout-align="center center" >
+				<div flex>
 					<md-button class="md-fab md-accent" aria-label="Call Me">
 					<md-tooltip md-direction="bottom">
 						Call Me
@@ -23,7 +23,7 @@
 				<div flex>
 					<md-button class="md-fab md-accent" aria-label="Message Me">
 					<md-tooltip md-direction="bottom">
-						Call Me
+						Message Me
 					</md-tooltip>
 					<md-icon md-svg-src="./img/phone-receiver.svg" style="width: 24px; height: 24px;"></md-icon>
 					</md-button>
@@ -32,37 +32,52 @@
 				<section id="about">
 					<div>
 						<h2>Hello, I'm Rob St. Lezin</h2>
+						<span>Jr. Web Developer Extradinaire</span>
 						<p>
-						Jr. Web Developer Extradinaire, MEAN stack enthusiast and practictioner. I have two australian side-kicks Shug and Louie who love adventure. <br>
+						<br> MEAN stack enthusiast and practictioner.<br> I have two australian side-kicks Shug and Louie who love adventure. 
 						Hire us for your next Jr. Development Job.
 						</p>
 					</div>
 				</section>
 				<div class="header">
-					<div>
-						<h3>What I Can Do</h3>
+						<h3>CORE SKILLS
+							<md-divider ></md-divider>
+						</h3>
+					<div id="my-skills-content" layout="row" layout-align="center center">
+						<div flex>
+							<div class="spec-skill">HTML/CSS</div>
+							<md-icon id="html-css" md-svg-src="./img/web-design.svg" style="width: 50px; height: 50px;"></md-icon>
+						</div>
+						<div flex>
+							<div class="spec-skill">JAVASCRIPT</div>
+							<md-icon id="js" md-svg-src='./img/interface.svg' style="width: 50px; height: 50px;"></md-icon>
+						</div>
+						<div flex>
+							<div class="spec-skill">ANALYTICS/SEO</div>
+							<md-icon id="analytics-seo" md-svg-src="./img/line.svg" style="width: 50px; height: 50px;"></md-icon>
+						</div>	
 					</div>
 				</div>
-				<div id="my-skills-content" layout="row" layout-align="center center">
-					<div flex>
-						html/css
+				<div class="header">
+					<h3>Showcase</h3>
+					<div ng-repeat="project in projects">
+						<card project="project"></card>
 					</div>
-					<div flex>
-						Javascript Frameworks
 					</div>
-					<div flex>
-						Analytics/SEO
-					</div>
+					<card></card>						
+
 				</div>
-			<!-- 	<div flex>
-				<a href="http://www.freepik.com/free-vector/useful-web-icons-collection_573292.htm">Designed by Freepik</a>
-				</div> -->
-<!--dependencies for Angular Material-->
-	<script src="/node_modules/angular/angular.js"></script>
-	<script src="/node_modules/angular-aria/angular-aria.js"></script> 
-	<script src="/node_modules/angular-animate/angular-animate.js"></script> 
-	<script src="/node_modules/angular-material/angular-material.js"></script> 
-	<script src="app.js"></script>
+				
+			<!--<div flex>
+			Icon made by Freepik from www.flaticon.com 
+			-->
+	<script src="./node_modules/angular/angular.js"></script>
+	<script src="./node_modules/angular-aria/angular-aria.js"></script> 
+	<script src="./node_modules/angular-animate/angular-animate.js"></script> 
+	<script src="./node_modules/angular-material/angular-material.js"></script> 
+	<script src="./app.js"></script>
+	<script src="./directives/cardDirective.js"></script>
+
 
 		</body>
 </html>
