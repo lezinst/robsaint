@@ -183,6 +183,20 @@ filter: grayscale(100%);
 
 }
 
+.footer {
+	font-size: .5em;
+	background-color: #292f33;
+	color:white;
+	height: 50px;
+
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+
+
 #second-section {
 padding-top:15px;
 }
