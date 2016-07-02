@@ -105,7 +105,6 @@ section {
 
 .hello{
 	position:relative;
-	/*background-color: #4385f5;*/
 	background-color: #2d4583;
 
 	color:white;
@@ -116,10 +115,14 @@ section {
 
 }
 
+.hello:hover {
+	background-color: #2F3F69;
+}
+
 
 
 .hello h2 {
-	font-size:3em;
+	font-size:2em;
 
 	
 }

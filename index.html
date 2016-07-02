@@ -10,7 +10,7 @@
 	<body ng-app="myWebsite" ng-controller="control">
 		<div class="navigation" layout="row">
 			<ul>
-				<li ng-click="blog()">Blog</li>
+				<li ng-click="blog()">Blog(TBA)</li>
 				<li ng-click="secondSection()">Skills</li>
 				<li ng-click="showcase()">Projects</li>
 			</ul>
@@ -33,7 +33,7 @@
 					</div>
 			</div>
 				<section angular-ripple class="hello">
-					<jk-carousel data="arrayData" item-template-url="'templates/sliderTemplate.html'" auto-slide="true" auto-slide-time="6000" max-height="400";>
+					<jk-carousel data="arrayData" item-template-url="'templates/sliderTemplate.html'" auto-slide="false" auto-slide-time="6000";>
 					</jk-carousel>
 				</section>
 				<div ng-click="secondSection()" class="icon-center"><md-icon  md-svg-src="./img/chevron-arrow-down.svg" style="width: 75px; height: 75px;"></md-icon></div>
