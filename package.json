@@ -22,5 +22,9 @@
     "angular-aria": "^1.5.7",
     "angular-jk-carousel": "^0.1.4",
     "angular-material": "^1.1.0-rc.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4"
   }
 }
