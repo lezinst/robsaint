@@ -80,6 +80,14 @@ text-align: right;
 	width:350px;
 	height:350px;
 	margin:5% auto 5% auto;
+	transition: all .3s ease-in-out;
+
+
+}
+
+.circle:hover {
+	transform: scale(1.1);
+	
 
 }
 
@@ -158,6 +166,15 @@ section {
 	z-index:9;
 	width:100px;
 	height:100px;
+	transition: all .3s ease-in-out;
+
+}
+
+.md-button.md-fab:hover{
+	z-index:9;
+	width:100px;
+	height:100px;
+	transform: scale(1.2);
 }
 
 
