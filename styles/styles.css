@@ -111,7 +111,6 @@ section {
 	margin: -10% auto 1% auto;
 	border-radius: 4px;
 	width:100%;
-	height:40%;
 
 }
 
@@ -278,6 +277,7 @@ transition: all .2s ease-in-out;
     }
   }
 
+/*tablet media queries*/
 
   @media (max-width:900px){
 	  .spec-skill {
@@ -290,6 +290,8 @@ transition: all .2s ease-in-out;
 
   }
 
+  /*phone media queries*/
+
   @media (max-width:400px) {
 	.circle {
 		width:150px;
@@ -298,6 +300,10 @@ transition: all .2s ease-in-out;
 
 	.navigation{
 		display: none;
+	}
+
+	.background-pic{
+		height: 20%;
 	}
 }
 
