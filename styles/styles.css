@@ -294,8 +294,10 @@ transition: all .2s ease-in-out;
 
   @media (max-width:400px) {
 	.circle {
-		width:150px;
-		height:150px;
+		position:absolute;
+		top:0;
+		width:100px;
+		height:100px;
 	}
 
 	.navigation{
@@ -305,6 +307,12 @@ transition: all .2s ease-in-out;
 	.background-pic{
 		height: 20%;
 	}
+
+	.md-button.md-fab{
+	z-index:9;
+	width:75px;
+	height:75px;
+}
 }
 
   /** {
