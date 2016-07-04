@@ -80,24 +80,23 @@ text-align: right;
 	width:350px;
 	height:350px;
 	margin:5% auto 5% auto;
-	transition: all .3s ease-in-out;
-
-
 }
 
-.circle:hover {
-	transform: scale(1.1);
-	
 
-}
 
 .circle img {
-
+	transition: all .3s ease-in-out;
 	width: 100%;
 	height: auto;
 	margin-left:5%;
 	z-index: 4;
 	
+}
+
+.circle img:hover {
+	transform: scale(1.1);
+	
+
 }
 
 .icon-center {
@@ -117,17 +116,13 @@ section {
 
 .hello{
 	position:relative;
-	background-color: #2d4583;
+	background-color: #2F3F69;
 
 	color:white;
 	margin: -10% auto 1% auto;
 	border-radius: 4px;
 	width:100%;
 
-}
-
-.hello:hover {
-	background-color: #2F3F69;
 }
 
 
@@ -186,24 +181,12 @@ section {
 	padding-bottom: 3px;
 }
 
-.full-width-image {
-filter: grayscale(100%);
--webkit-filter: grayscale(100%);
--webkit-transition: .5s ease-in-out;
-  -moz-filter: grayscale(100%); 
-  -moz-transition: .5s ease-in-out;
-  -o-filter: grayscale(100%); 
-  -o-transition: .5s ease-in-out;
-
+.card-image img,p {
+	margin: 15px;
+	text-align: left;
 }
 
-.full-width-image:hover {
- -webkit-filter: grayscale(0%);
-  -webkit-transition: .5s ease-in-out;
-  -moz-filter: grayscale(0%);
-  -moz-transition: .5s ease-in-out;
-  -o-filter: grayscale(0%);
-  -o-transition: .5s ease-in-out;
+.card-image p {
 
 }
 
@@ -280,7 +263,6 @@ transition: all .2s ease-in-out;
 
   [angular-ripple] {
     position: relative;
-    overflow: hidden;
   }
   .angular-ripple {
     display: block;

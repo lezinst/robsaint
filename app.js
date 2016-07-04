@@ -29,14 +29,16 @@ App.controller('control', function($scope,$location, $anchorScroll){
                     title: 'Robo Social Media Dashboard',
                     type: 'AngularJS',
                     img:  './img/robosocial.png',
-                    url: 'http://lezinst.github.io/social-media-dashboard'
+                    url: 'http://lezinst.github.io/social-media-dashboard',
+                    exp:'Tired of switching between social media network sites to get on top of your digital life ? Me too. That\'s why I built a social media dashboard demo to see social posts from all your different social networks, all on one site, all in one style. This project is built using AngularJS and Bootstrap and is using a test database; where all users are robots and all images use placeholders. This helpful application interacts with a RESTful api and filters out social media posts before showing the chosen results in the view. '
 
                 },
                 {
                     title:'Tim3r Stop watch',
                     type: 'AngularJS',
                     img: './img/timer.png',
-                    url: 'http://lezinst.github.io/'
+                    url: 'http://lezinst.github.io/',
+                    exp: 'A desktop timer - to keep track of time! Features a digital and analog configuration. This app is built using AngularJS and Angular Material framework. Database connection to save your times coming soon!'
                 }
              ];
 
