@@ -45,12 +45,12 @@ App.controller('control', function($scope,$location, $anchorScroll){
             $scope.arrayData = [
                 {
                     intro:"Hello, I'm Rob",
-                    paragraph:'a web developer in SLC',
+                    paragraph:'a full-stack developer',
                     callsign:"../img/html-coding.svg"
                 } ,
                 {
                     intro:"About",
-                    paragraph:"A University of Utah alumni since 2011, I graduated from DevMountain code school in Salt Lake City with an emphasis on AngularJS, Node.JS, and MongoDB. My mission is to write better code every day, to help build a better tomorrow. In my free time I like to stay active with my side-kick aussies,  make some craft brew with my neighbor, ride my bike around town, or stay involved with the development community.",
+                    paragraph:"A University of Utah alumni since 2011, I graduated from DevMountain code school in Salt Lake City with an emphasis on AngularJS, NodeJS, and MongoDB. My mission is to write better code every day, to help build a better tomorrow. In my free time I like to stay active with my side-kick aussies,  make some craft brew with my neighbor, ride my bike around town, or stay involved with the development community.",
                     callsign:"",
                     callsigntwo:"../img/manager.svg"
 
@@ -58,7 +58,7 @@ App.controller('control', function($scope,$location, $anchorScroll){
                 },
                 {
                     intro:"contact ",
-                    paragraph:"robstlezin@gmail.com | (801) 502-3196 | github.com/lezinst",
+                    paragraph:"robstlezin@gmail.com | (801) 502-3196 | github.com/lezinst | linkedin.com/in/robertstlezin",
                     callsigntwo:"../img/manager.svg"
 
                     

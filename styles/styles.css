@@ -191,15 +191,31 @@ section {
 }
 
 .footer {
+	position: relative;
 	font-size: .5em;
+	height: 100px;
+	width: 100%;
 	background-color: #292f33;
 	color:white;
-	height: 50px;
 
 }
 
 .footer a {
+	display: block;
 	text-decoration: none;
+	color: white;
+}
+
+.footer ul {
+	position: absolute;
+	width: 20%;
+	left:80%;
+}
+
+.footer ul li {
+	text-align: justify;
+	list-style-type: none;
+	font-size: 1em;
 }
 
 
