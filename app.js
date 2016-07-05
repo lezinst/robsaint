@@ -44,7 +44,7 @@ App.controller('control', function($scope,$location, $anchorScroll){
 
             $scope.arrayData = [
                 {
-                    intro:"Hello, I'm Rob",
+                    intro:" Rob St. Lezin ",
                     paragraph:'a full-stack developer',
                     callsign:"../img/html-coding.svg"
                 } ,
@@ -57,7 +57,7 @@ App.controller('control', function($scope,$location, $anchorScroll){
                     
                 },
                 {
-                    intro:"contact ",
+                    intro:"Contact ",
                     paragraph:"robstlezin@gmail.com | (801) 502-3196 | github.com/lezinst | linkedin.com/in/robertstlezin",
                     callsigntwo:"../img/manager.svg"
 
