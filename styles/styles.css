@@ -78,8 +78,8 @@ transform:scale(1.3);
 	height: 500px; 
 	margin: 0px auto; 
 	text-align: center;
-
-	background-image: url(../img/mat_light.jpg);
+	background-size:cover;
+	background-image: url(../img/slcbackground.jpg);
 	background-color:#f5f5f5;
 	background-size:100%;
 	background-position:75%;
@@ -92,8 +92,8 @@ transform:scale(1.3);
 
 
 .circle {
-	width:350px;
-	height:350px;
+	width:100%;
+	height:100%;
 	margin:5% auto 5% auto;
 }
 
@@ -101,9 +101,8 @@ transform:scale(1.3);
 
 .circle img {
 	transition: all .3s ease-in-out;
-	width: 100%;
+	width: 80%;
 	height: auto;
-	margin-left:5%;
 	z-index: 4;
 	
 }
@@ -295,7 +294,7 @@ transition: all .2s ease-in-out;
 }
 
 
-
+/*angular ripple directive custom css*/
 
   [angular-ripple] {
     position: relative;
@@ -317,6 +316,11 @@ transition: all .2s ease-in-out;
     }
   }
 
+  /*jk-carousel custom style */
+  .jk-carousel .ng-isolate-scope {
+  	height:300px;
+  }
+
 /*tablet media queries*/
 
   @media (max-width:900px){
@@ -334,15 +338,14 @@ transition: all .2s ease-in-out;
 
   @media (max-width:400px) {
 	.circle {
-		position:absolute;
-		top:0;
 		width:150px;
 		height:150px;
-		margin:0px;
+		margin:-10px;
 	}
 
 	.circle img {
 		margin-left:0px;
+
 	}
 
 	.navigation{
@@ -350,18 +353,39 @@ transition: all .2s ease-in-out;
 	}
 
 	.hello {
-		height:80%;
+		margin:0px;
+	}
+
+	.hello h2{
+		font-size:1em;
+		margin-top:0;
+	}
+
+	.hello p {
+		font-size:14pt;
 	}
 
 	.background-pic{
 		height: 20%;
+		background-position: left center;
 	}
 
 	.md-button.md-fab{
 	z-index:9;
 	width:75px;
 	height:75px;
-}
+	transition: none;
+	transition: all .3s ease-in-out;
+
+	}
+
+
+	.md-button.md-fab:hover{
+		z-index:9;
+		width:100px;
+		height:100px;
+		transform: scale(.9);
+	}
 }
 
   /** {
