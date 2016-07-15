@@ -43,13 +43,9 @@ App.controller('control', function($scope,$location, $anchorScroll){
              ];
 
             $scope.arrayData = [
+               
                 {
-                    intro:" Rob St. Lezin ",
-                    paragraph:'a full-stack developer',
-                    callsign:"../img/html-coding.svg"
-                } ,
-                {
-                    intro:"About",
+                    intro:"Rob St. Lezin",
                     paragraph:"A University of Utah alumni since 2011, I graduated from DevMountain code school in Salt Lake City with an emphasis on AngularJS, NodeJS, and MongoDB. My mission is to write better code every day, to help build a better tomorrow. In my free time I like to stay active with my side-kick aussies,  make some craft brew with my neighbor, ride my bike around town, or stay involved with the development community.",
                     callsign:"",
                     callsigntwo:"../img/manager.svg"
