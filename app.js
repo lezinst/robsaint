@@ -1,29 +1,34 @@
 var App = angular.module('myWebsite', ['ngMaterial','jkAngularCarousel','angularRipple']);
-//controller for main projects and for the slider
+
+
+App.config(function($mdThemingProvider) {
+  $mdThemingProvider.disableTheming();
+});
+//controller for main projects
 App.controller('control', function($scope,$location, $anchorScroll){
-	          
+
             $scope.secondSection = function() {
                 // set the location.hash to the id of
                 // the element you wish to scroll to.
                 $location.hash('second-section');
-               
+
 
                 // call $anchorScroll()
                 $anchorScroll();
-            };   
+            };
 
               $scope.showcase = function() {
                 // set the location.hash to the id of
                 // the element you wish to scroll to.
                 $location.hash('showcase');
-               
+
 
                 // call $anchorScroll()
                 $anchorScroll();
-            };   
-              
-              
-              
+            };
+
+
+
               $scope.projects = [
                 {
                     title: 'Robo Social Media Dashboard',
@@ -42,31 +47,5 @@ App.controller('control', function($scope,$location, $anchorScroll){
                 }
              ];
 
-            // $scope.arrayData = [
-               
-            //     {
-            //         intro:"Rob St. Lezin",
-            //         paragraph:" Hello, I'm a web developer. A University of Utah alumni since 2011, I graduated from DevMountain code school in Salt Lake City with an emphasis on AngularJS, NodeJS, and MongoDB. My mission is to write better code every day, to help build a better tomorrow. In my free time I like to stay active with my side-kick aussies,  make some craft brew with my neighbor, ride my bike around town, or stay involved with the development community.",
-            //         callsign:"",
-            //         callsigntwo:"../img/manager.svg"
-
-                    
-            //     },
-            //     {
-            //         intro:"Contact ",
-            //         paragraph:"robstlezin@gmail.com | (801) 502-3196 | github.com/lezinst | linkedin.com/in/robertstlezin",
-            //         callsigntwo:"../img/manager.svg"
-
-                    
-            //     }
-
-                
-                 
-            // ];
 
 });
-
-
-             
-
-
